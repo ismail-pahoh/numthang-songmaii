@@ -245,7 +245,7 @@
             <div class="text-xs text-app-muted space-y-1">
                 <p>วางรายการพิกัดแบบแยกบรรทัด (สามารถระบุชื่อสถานที่ต่อท้ายได้):</p>
                 <code class="bg-app-inner text-emerald-500 px-2 py-1 rounded text-[11px] block font-mono border border-app">
-                    13.615323, 100.289984, จุดเริ่มต้น คลังสินค้า<br>
+                    13.615323, 100.289984, จุดเริ่มต้น <br>
                     13.641600, 100.273144, ร้านค้า A
                 </code>
             </div>
@@ -299,11 +299,7 @@
     <script>
         // Initial Waypoints Data with custom editable titles
         const DEFAULT_POINTS = [
-            { id: '1', lat: 13.615323646089681, lng: 100.28998451888872, title: 'จุดที่ 1 (จุดเริ่มต้น - คลังสินค้า)' },
-            { id: '2', lat: 13.641600449365281, lng: 100.27314473616825, title: 'จุดที่ 2 (จุดส่ง A)' },
-            { id: '3', lat: 13.655851178776068, lng: 100.26763419698456, title: 'จุดที่ 3 (จุดส่ง B)' },
-            { id: '4', lat: 13.716727201067885, lng: 100.32753406445518, title: 'จุดที่ 4 (จุดส่ง C)' },
-            { id: '5', lat: 13.711595463980407, lng: 100.29192870071425, title: 'จุดที่ 5 (จุดส่ง D)' }
+            { id: '1', lat: 13.615323646089681, lng: 100.28998451888872, title: 'จุดที่ 1 (จุดเริ่มต้น - ศายเยาวชนและครอบครัวจังหวัดสมุทรสาค)' }
         ];
 
         let waypoints = JSON.parse(JSON.stringify(DEFAULT_POINTS));
@@ -322,7 +318,7 @@
         };
 
         window.onload = function() {
-            setTheme('dark');
+            setTheme('soft');
             initMap();
             renderWaypoints();
             updateStatsAndPolyline();
